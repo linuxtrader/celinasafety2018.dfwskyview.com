@@ -1,0 +1,12 @@
+#!/bin/bash
+
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin https://github.com/dfwskyview/celinasafety2018.dfwskyview.com.git
+git push -u origin master
+
+git remote add linuxtrader git@github.com:linuxtrader/celinasafety2018.dfwskyview.com.git
+git pull linuxtrader master --allow-unrelated-histories
+
+
