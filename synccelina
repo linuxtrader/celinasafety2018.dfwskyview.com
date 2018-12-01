@@ -1,9 +1,12 @@
 #!/bin/bash
 
 # cant use --delete here since there is more than one source directory.
-# --acl public-read probably does nothing here since I have public set as brute force.
 
-aws s3 sync ~/Documents/aws/clients/celinafire s3://celinasafety2018.dfwskyview.com/ --acl public-read
-aws s3 sync        ~/Movies/clients/celinafire s3://celinasafety2018.dfwskyview.com/ --acl public-read --cache-control max-age=31536000,public
+mv .git ../cfire_git
+aws s3 sync ~/Documents/aws/clients/celinafire s3://celinasafety2018.dfwskyview.com/ 
+mv ../cfire_git .git
+#aws s3 sync        ~/Movies/clients/celinafire s3://celinasafety2018.dfwskyview.com/ 
+# 
+aws s3 sync s3://celinasafety2018.dfwskyview.com/cf_data s3://s3.dfwskyview.com/cf_data --acl public-read
 
 echo Maybe do zip -r ../celinafire01.zip .
