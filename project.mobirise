@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "CelinaSafety2018",
-    "currentPage": "gallery.html",
+    "currentPage": "index.html",
     "versionFirst": "4.0.14",
     "uniqCompNum": 101,
     "versionPublish": "4.6.3",
@@ -43,9 +43,7 @@
     "favicon": "",
     "noImageResize": "",
     "path": "@PROJECT_PATH@",
-    "screenshot": "screenshot.png",
-    "publishType": "local",
-    "publishPath": "file:///Users/danrose/dfwSkyview/sites/celinasafety2018"
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "gallery.html": {
