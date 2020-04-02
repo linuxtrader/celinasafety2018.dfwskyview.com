@@ -43,7 +43,9 @@
     "favicon": "",
     "noImageResize": "",
     "path": "@PROJECT_PATH@",
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "publishType": "local",
+    "publishPath": "file:///Users/danrose/dfwSkyview/sites/celinasafety2018"
   },
   "pages": {
     "gallery.html": {
